@@ -1,0 +1,116 @@
+html {
+    background: rgb(5, 38, 77);
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(font/BebasNeue-Regular.ttf);
+  }
+
+body {
+    font: normal 15pt bebas;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+img {
+    width: 120px;
+    height: 78px;
+}
+
+#addanime {
+    background: url("Img/add.png");
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 45%;
+}
+
+#addanime:hover {
+    background: url("Img/add2.png");
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 45%;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nomeanime {
+    overflow-wrap: break-word;
+    font-size:1vw;
+}
+
+#center {
+    display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+#close {
+    background: url("Img/close.png");
+    background-size: cover;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 45%;
+    position: relative;
+    left: 55px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 140px);
+    grid-template-columns: repeat( auto-fit );
+    grid-gap: 3px;
+    grid-auto-flow: column;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 3px;
+    width: 130px;
+    /*height: 150px;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+}
+
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#github {
+    bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#github:hover {
+    color: rgb(0, 202, 0);
+    text-decoration: underline;
+}
+
+#github:active {
+    color: white;
+}
